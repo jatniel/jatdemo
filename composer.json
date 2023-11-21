@@ -15,9 +15,9 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "jatdemo\\": "src/hello"
-        }
+        "files": ["src/hello.php"],
+        "psr-4": { "jatdemo\\": "src/"}
+    
     },
     "minimum-stability": "dev",
     "prefer-stable": true
