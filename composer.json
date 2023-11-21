@@ -12,5 +12,8 @@
             "homepage": "https://jatniel.dev",
             "role": "Developer"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+
 }
