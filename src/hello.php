@@ -1,6 +1,6 @@
 <?php
 
-namespace jatdemo\src;
+namespace jatdemo;
 
 class hello
 {
