@@ -1,7 +1,9 @@
 {
     "name": "jatdemo/hello",
-    "description": "A simple Hello World dev package",
     "type": "library",
+    "description": "A simple Hello World dev package",
+    "keywords": ["php","package","demo","hello"],
+    "homepage": "https://yourcompany.com",
     "license": "MIT",
     "authors": [
         {
@@ -10,12 +12,5 @@
             "homepage": "https://jatniel.dev",
             "role": "Developer"
         }
-    ],
-    "autoload": {
-        "psr-4": {
-            "YourVendor\\HelloWorldPackage\\": "src/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    ]
 }
