@@ -1,0 +1,21 @@
+{
+    "name": "jatdemo/hello",
+    "description": "A simple Hello World dev package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jatniel Guzmán",
+            "email": "jatniel.guzman@gmail.com",
+            "homepage": "https://jatniel.dev",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\HelloWorldPackage\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
