@@ -5,7 +5,7 @@
     "keywords": ["php","package","demo","hello"],
     "homepage": "https://github.com/jatniel/jatdemo",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "authors": [
         {
             "name": "Jatniel Guzmán",
@@ -15,21 +15,26 @@
         }
     ],
     "autoload": {
-        "psr-4": { "jatdemo\\": "src/"}
-
+        "psr-4": {
+            "JatDemo\\": "src/"
+        }
     },
     "require": {
-        "php": "^7.4"
+        "php": "^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.0",
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.88"
     },
     "autoload-dev": {
         "psr-4": {
             "JatDemo\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
-
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix",
+        "analyse": "vendor/bin/phpstan analyse src",
+        "test": "vendor/bin/phpunit tests"
+    }
 }

@@ -1,15 +1,42 @@
 <?php
+/*
+* A simple Hello World - dev PHP package
+* @package JatDemo
+* @author Jatniel Guzmán
+* @version 1.1.0
+* @license MIT
+* @copyright 2025 Jatniel Guzmán
+* @link https://jatniel.dev
+*/
 
-namespace tests;
+declare(strict_types=1);
+
+namespace JatDemo\Tests;
 
 use JatDemo\JatDemo;
 use PHPUnit\Framework\TestCase;
 
 class JatDemoTest extends TestCase
 {
-    public function testHelloDev()
+    public function testHelloDev(): void
     {
         $jatDemo = new JatDemo();
-        $this->assertEquals('Hello Dev!', $jatDemo->helloDev());
+        $this->assertSame('Hello Dev!', $jatDemo->helloDev());
+    }
+
+    public function testHelloWithCustomName(): void
+    {
+        $jatDemo = new JatDemo();
+        $this->assertSame('Hello Jatniel!', $jatDemo->hello('Jatniel'));
+    }
+
+    public function testHelloRejectsEmptyName(): void
+    {
+        $jatDemo = new JatDemo();
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Name cannot be empty.');
+
+        $jatDemo->hello('   ');
     }
 }
