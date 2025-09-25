@@ -3,7 +3,7 @@
 * A simple Hello World - dev PHP package
 * @package JatDemo
 * @author Jatniel Guzmán
-* @version 1.1.0
+* @version 1.1.1
 * @license MIT
 * @copyright 2025 Jatniel Guzmán
 * @link https://jatniel.dev

@@ -5,7 +5,7 @@
     "keywords": ["php","package","demo","hello"],
     "homepage": "https://github.com/jatniel/jatdemo",
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "authors": [
         {
             "name": "Jatniel Guzmán",
